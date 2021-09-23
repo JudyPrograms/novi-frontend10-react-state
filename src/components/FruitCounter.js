@@ -1,12 +1,12 @@
 import React from "react";
 
-function FruitCounter ({fruit, resetState}) {
+function FruitCounter ({fruit, state}) {
 
     const [counter, setCounter] = React.useState(0)
 
-    // if (resetState) {
-    //     setCounter(0)
-    // }
+    if (state) {
+        setCounter(0)
+    }
 
     function handleMinusClick() {
         if (counter < 1) {
@@ -20,15 +20,19 @@ function FruitCounter ({fruit, resetState}) {
     return <>
         <section>
             <h2>{fruit}</h2>
-            <button
-                type="button"
-                onClick={handleMinusClick}
-            >-</button>
-            <p>{counter}</p>
-            <button
-                type="button"
-                onClick={()=> setCounter(counter + 1)}
-            >+</button>
+            <div>
+                <button
+                    className="count-button"
+                    type="button"
+                    onClick={handleMinusClick}
+                >-</button>
+                <p>{counter}</p>
+                <button
+                    className="count-button"
+                    type="button"
+                    onClick={()=> setCounter(counter + 1)}
+                >+</button>
+            </div>
         </section>
     </>
 }

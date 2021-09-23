@@ -1,10 +1,10 @@
 import React from "react";
 
-function TextInputField ({text}) {
+function TextInputField ({label}) {
 
     return <>
-        <label htmlFor="">
-            {text}
+        <label>
+            {label}
             <input type="text"/>
         </label>
     </>

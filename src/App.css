@@ -1,51 +1,110 @@
 body {
-    margin: 10px;
+    margin: 20px;
+    background-color: hsl(111, 37%, 90%);
+    color: hsl(183, 58%, 18%);
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#header {
+    margin-bottom: 50px;
+    width: 50%;
 }
 
 section {
-    padding: 10px;
-    margin-bottom: 20px;
+    background-color: hsl(111, 37%, 80%);
+    padding: 0 50px;
+    margin: 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width: 50%;
-    border: solid black;
+    border: solid hsl(183, 58%, 28%);
     border-radius: 20px;
 }
 
-button {
-    width: 50px;
-    height: 50px;
+section div {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.count-button {
+    background-color: hsl(40, 83%, 76%);
+    border-radius: 5px;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
 }
 
 form {
-    margin: 20px;
+    background-color: hsl(177, 27%, 71%);
+    margin-top: 50px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
+    width: 50%;
+    border: hsl(183, 58%, 28%) dotted 2px;
 }
 
 label {
+    font-weight: bold;
     margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.radio-label {
+    margin: 0;
+    font-weight: normal;
 }
 
 input {
     margin-left: 10px;
 }
 
-select {
+input[type=textarea] {
+
+}
+
+.normal-button {
+    background-color: hsl(40, 83%, 76%);
+    color: hsl(183, 58%, 18%);
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 120px;
+}
+
+.form-text-area {
     display: flex;
     flex-direction: column;
-    margin: 10px;
 }
 
-
-.reset-button {
-    border-radius: 10px;
-    padding: 10px;
-    width: 50%;
-    margin: 10px;
+textarea {
+    margin-top: 10px;
 }
 
-#header {
-    width: 50%;
+.form-checkbox {
+    font-weight: normal;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.send-button {
+    display: flex;
+    justify-content: center;
 }
