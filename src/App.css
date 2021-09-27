@@ -1,0 +1,142 @@
+body {
+    margin: 20px;
+    background-image: linear-gradient(white, hsl(111, 37%, 90%), hsl(177, 27%, 91%));
+    color: hsl(183, 58%, 18%);
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#header {
+    margin-bottom: 50px;
+    width: 50%;
+}
+
+/************************************* FRUIT COUNTERS *************************************/
+
+section {
+    background-color: hsl(111, 37%, 80%);
+    padding: 0 50px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    border: 1px solid hsl(183, 58%, 28%);
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 15px 10px -8px, rgba(0, 0, 0, 0.3) 0 12px 15px -12px;
+}
+
+section div {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.count-button, .count-button-red {
+    background-color: hsl(40, 83%, 76%);
+    border-color: hsl(183, 58%, 28%);
+    border-radius: 5px;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.count-button-red {
+    border-color: darkred;
+    color: darkred;
+}
+
+.count-button:active {
+    border-radius: 6px;
+    background-color: hsl(40, 100%, 80%);
+}
+
+.counter, .counter-red {
+    text-align: center;
+    width: 20px;
+}
+
+.counter-red {
+    color: darkred;
+}
+
+/******************************************** FORM ********************************************/
+
+form {
+    background-color: hsl(177, 27%, 91%);
+    margin: 50px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border: hsl(183, 58%, 28%) dotted 1px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px;
+}
+
+label {
+    font-weight: bold;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    margin-left: 10px;
+}
+
+.radio-buttons-delivery {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.radio-label {
+    margin: 0;
+    font-weight: normal;
+}
+
+textarea {
+    margin-top: 10px;
+}
+
+.text-area-remarks {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-conditions {
+    font-weight: normal;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/****************************************** BUTTONS ******************************************/
+
+.send-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.normal-button {
+    background-color: hsl(40, 83%, 76%);
+    color: hsl(183, 58%, 18%);
+    border-color: hsl(183, 58%, 28%);
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 120px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 15px 10px -8px, rgba(0, 0, 0, 0.3) 0 12px 15px -12px;
+}
+
+.normal-button:active {
+    border-radius: 11px;
+    background-color: hsl(40, 100%, 80%);
+}
