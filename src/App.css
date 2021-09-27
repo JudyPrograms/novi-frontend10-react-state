@@ -1,6 +1,6 @@
 body {
     margin: 20px;
-    background-color: hsl(111, 37%, 90%);
+    background-image: linear-gradient(white, hsl(111, 37%, 90%), hsl(177, 27%, 91%));
     color: hsl(183, 58%, 18%);
 }
 
@@ -16,6 +16,8 @@ body {
     width: 50%;
 }
 
+/************************************* FRUIT COUNTERS *************************************/
+
 section {
     background-color: hsl(111, 37%, 80%);
     padding: 0 50px;
@@ -23,9 +25,10 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
-    border: solid hsl(183, 58%, 28%);
+    width: 40%;
+    border: 1px solid hsl(183, 58%, 28%);
     border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 15px 10px -8px, rgba(0, 0, 0, 0.3) 0 12px 15px -12px;
 }
 
 section div {
@@ -35,8 +38,9 @@ section div {
     align-items: center;
 }
 
-.count-button {
+.count-button, .count-button-red {
     background-color: hsl(40, 83%, 76%);
+    border-color: hsl(183, 58%, 28%);
     border-radius: 5px;
     font-weight: bold;
     width: 30px;
@@ -44,14 +48,37 @@ section div {
     margin: 0 10px;
 }
 
+.count-button-red {
+    border-color: darkred;
+    color: darkred;
+}
+
+.count-button:active {
+    border-radius: 6px;
+    background-color: hsl(40, 100%, 80%);
+}
+
+.counter, .counter-red {
+    text-align: center;
+    width: 20px;
+}
+
+.counter-red {
+    color: darkred;
+}
+
+/******************************************** FORM ********************************************/
+
 form {
-    background-color: hsl(177, 27%, 71%);
-    margin-top: 50px;
+    background-color: hsl(177, 27%, 91%);
+    margin: 50px 0;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    width: 50%;
-    border: hsl(183, 58%, 28%) dotted 2px;
+    width: 40%;
+    border: hsl(183, 58%, 28%) dotted 1px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px;
 }
 
 label {
@@ -61,7 +88,11 @@ label {
     justify-content: space-between;
 }
 
-.radio-buttons {
+input {
+    margin-left: 10px;
+}
+
+.radio-buttons-delivery {
     display: flex;
     justify-content: flex-end;
 }
@@ -71,40 +102,41 @@ label {
     font-weight: normal;
 }
 
-input {
-    margin-left: 10px;
-}
-
-input[type=textarea] {
-
-}
-
-.normal-button {
-    background-color: hsl(40, 83%, 76%);
-    color: hsl(183, 58%, 18%);
-    font-weight: bold;
-    border-radius: 10px;
-    margin-top: 10px;
-    padding: 10px;
-    width: 120px;
-}
-
-.form-text-area {
-    display: flex;
-    flex-direction: column;
-}
-
 textarea {
     margin-top: 10px;
 }
 
-.form-checkbox {
+.text-area-remarks {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-conditions {
     font-weight: normal;
     display: flex;
     justify-content: flex-end;
 }
 
-.send-button {
+/****************************************** BUTTONS ******************************************/
+
+.send-button-container {
     display: flex;
     justify-content: center;
+}
+
+.normal-button {
+    background-color: hsl(40, 83%, 76%);
+    color: hsl(183, 58%, 18%);
+    border-color: hsl(183, 58%, 28%);
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 120px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 15px 10px -8px, rgba(0, 0, 0, 0.3) 0 12px 15px -12px;
+}
+
+.normal-button:active {
+    border-radius: 11px;
+    background-color: hsl(40, 100%, 80%);
 }

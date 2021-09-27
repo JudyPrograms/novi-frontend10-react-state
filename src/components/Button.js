@@ -1,12 +1,12 @@
 import React from "react"
 
-function Button ({value, handleOnClick}) {
+function Button ({type, text, handleClick}) {
     return <>
         <button
             className="normal-button"
-            type="button"
-            onClick={handleOnClick}
-        >{value}</button>
+            type={type}
+            onClick={handleClick}
+        >{text}</button>
     </>
 }
 

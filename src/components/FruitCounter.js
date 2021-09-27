@@ -1,36 +1,21 @@
 import React from "react";
 
-function FruitCounter ({fruit, state}) {
-
-    const [counter, setCounter] = React.useState(0)
-
-    if (state) {
-        setCounter(0)
-    }
-
-    function handleMinusClick() {
-        if (counter < 1) {
-            return setCounter(0)
-        }
-        else {
-            return setCounter(counter - 1)
-        }
-    }
+function FruitCounter ({fruit, counter, handleMinusClick, handlePlusClick, register}) {
 
     return <>
         <section>
             <h2>{fruit}</h2>
             <div>
                 <button
-                    className="count-button"
+                    className={counter > 0 ? "count-button-red" : "count-button"}
                     type="button"
                     onClick={handleMinusClick}
                 >-</button>
-                <p>{counter}</p>
+                <p className={counter > 0 ? "counter-red" : "counter"}>{counter}</p>
                 <button
-                    className="count-button"
+                    className={counter > 0 ? "count-button-red" : "count-button"}
                     type="button"
-                    onClick={()=> setCounter(counter + 1)}
+                    onClick={handlePlusClick}
                 >+</button>
             </div>
         </section>
